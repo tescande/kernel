@@ -42,7 +42,7 @@
 Name: kernel
 License: GPLv2
 Version: 4.19.19
-Release: %{?xsrel}.6%{?dist}
+Release: %{?xsrel}.6.0.tee.1%{?dist}
 ExclusiveArch: x86_64
 ExclusiveOS: Linux
 Summary: The Linux kernel
@@ -751,6 +751,10 @@ Patch1014: 0006-net-rds-reset-op_nents-when-zerocopy-page-pin-fails.patch
 # CVE-2026-46243 (cifswitch)
 Patch1015: 0007-smb-client-reject-userspace-cifs-spnego-descriptions.patch
 
+# PCIe HotPlug fixes
+Patch1020: 0001-PCI-pciehp-Differentiate-between-surprise-and-safe-r.patch
+Patch1021: 0002-PCI-pciehp-Tolerate-Presence-Detect-hardwired-to-zer.patch
+
 %description
 The kernel package contains the Linux kernel (vmlinuz), the core of any
 Linux operating system. The kernel handles the basic functions of the operating
@@ -1104,6 +1108,9 @@ fi
 %{?_cov_results_package}
 
 %changelog
+* Thu Jul 02 2026 Thierry Escande <thierry.escande@vates.tech> - 4.19.19-8.0.46.6.0.tee.1
+- Backport various fixes for PCIe HotPlug support
+
 * Wed Jun 03 2026 Lucas Ravagnier <lucas.ravagnier@vates.tech> - 4.19.19-8.0.46.6
 - Backport for CVE-2026-46243 (cifswitch)
 
