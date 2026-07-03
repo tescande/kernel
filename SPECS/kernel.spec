@@ -42,7 +42,7 @@
 Name: kernel
 License: GPLv2
 Version: 4.19.19
-Release: %{?xsrel}.7%{?dist}
+Release: %{?xsrel}.6.0.tee.2%{?dist}
 ExclusiveArch: x86_64
 ExclusiveOS: Linux
 Summary: The Linux kernel
@@ -754,6 +754,10 @@ Patch1015: 0007-smb-client-reject-userspace-cifs-spnego-descriptions.patch
 # Backport fixes in pcieport driver for hotplug hardware detection
 Patch1020: 0001-PCI-pciehp-Differentiate-between-surprise-and-safe-r.patch
 Patch1021: 0002-PCI-pciehp-Tolerate-Presence-Detect-hardwired-to-zer.patch
+
+Patch1022: 0001-PCI-pciehp-Disable-in-band-presence-detect-when-poss.patch
+Patch1023: 0002-PCI-pciehp-Wait-for-PDS-if-in-band-presence-is-disab.patch
+Patch1024: 0003-PCI-pciehp-Add-DMI-table-for-in-band-presence-detect.patch
 
 %description
 The kernel package contains the Linux kernel (vmlinuz), the core of any
