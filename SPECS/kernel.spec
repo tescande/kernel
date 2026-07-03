@@ -752,12 +752,20 @@ Patch1014: 0006-net-rds-reset-op_nents-when-zerocopy-page-pin-fails.patch
 Patch1015: 0007-smb-client-reject-userspace-cifs-spnego-descriptions.patch
 
 # Backport fixes in pcieport driver for hotplug hardware detection
-Patch1020: 0001-PCI-pciehp-Differentiate-between-surprise-and-safe-r.patch
-Patch1021: 0002-PCI-pciehp-Tolerate-Presence-Detect-hardwired-to-zer.patch
-
-Patch1022: 0001-PCI-pciehp-Disable-in-band-presence-detect-when-poss.patch
-Patch1023: 0002-PCI-pciehp-Wait-for-PDS-if-in-band-presence-is-disab.patch
-Patch1024: 0003-PCI-pciehp-Add-DMI-table-for-in-band-presence-detect.patch
+Patch1020: 0001-PCI-Simplify-disconnected-marking.patch
+Patch1021: 0002-PCI-pciehp-Differentiate-between-surprise-and-safe-r.patch
+Patch1022: 0003-PCI-pciehp-Drop-unnecessary-includes.patch
+Patch1023: 0004-PCI-pciehp-Drop-hotplug_slot_ops-wrappers.patch
+Patch1024: 0005-PCI-pciehp-Tolerate-Presence-Detect-hardwired-to-zer.patch
+Patch1025: 0006-PCI-pciehp-Unify-controller-and-slot-structs.patch
+Patch1026: 0007-PCI-pciehp-Rename-controller-struct-members-for-clar.patch
+Patch1027: 0008-PCI-pciehp-Reshuffle-controller-struct-for-clarity.patch
+Patch1028: 0009-PCI-hotplug-Constify-hotplug_slot_ops.patch
+Patch1029: 0010-PCI-hotplug-Drop-hotplug_slot_info.patch
+Patch1030: 0011-PCI-hotplug-Embed-hotplug_slot.patch
+Patch1031: 0012-PCI-pciehp-Disable-in-band-presence-detect-when-poss.patch
+Patch1032: 0013-PCI-pciehp-Wait-for-PDS-if-in-band-presence-is-disab.patch
+Patch1033: 0014-PCI-pciehp-Add-DMI-table-for-in-band-presence-detect.patch
 
 %description
 The kernel package contains the Linux kernel (vmlinuz), the core of any
